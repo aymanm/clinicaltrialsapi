@@ -1,0 +1,165 @@
+{
+  "_meta": {
+    "sources": [
+      "loopback/common/models",
+      "loopback/server/models",
+      "../common/models",
+      "./models"
+    ],
+    "mixins": [
+      "loopback/common/mixins",
+      "loopback/server/mixins",
+      "../common/mixins",
+      "./mixins"
+    ]
+  },
+  "User": {
+    "dataSource": "db"
+  },
+  "AccessToken": {
+    "dataSource": "db",
+    "public": false
+  },
+  "ACL": {
+    "dataSource": "db",
+    "public": false
+  },
+  "RoleMapping": {
+    "dataSource": "db",
+    "public": false
+  },
+  "Role": {
+    "dataSource": "db",
+    "public": false
+  },
+  "Studies": {
+    "dataSource": "clinicaldb",
+    "public": true,
+    "options": {
+      "remoting": {
+        "sharedMethods": {
+          "*": false,
+          "find": true,
+          "findById": true
+        }
+      }
+    }
+  },
+  "BriefSummaries": {
+    "dataSource": "clinicaldb",
+    "public": true,
+    "options": {
+      "remoting": {
+        "sharedMethods": {
+          "*": false,
+          "find": true,
+          "findById": true
+        }
+      }
+    }
+  },
+  "StudyReferences": {
+    "dataSource": "clinicaldb",
+    "public": true,
+    "options": {
+      "remoting": {
+        "sharedMethods": {
+          "*": false,
+          "find": true,
+          "findById": true
+        }
+      }
+    }
+  },
+  "Facilities": {
+    "dataSource": "clinicaldb",
+    "public": true,
+    "options": {
+      "remoting": {
+        "sharedMethods": {
+          "*": false,
+          "find": true,
+          "findById": true
+        }
+      }
+    }
+  },
+  "DetailedDescriptions": {
+    "dataSource": "clinicaldb",
+    "public": true,
+    "options": {
+      "remoting": {
+        "sharedMethods": {
+          "*": false,
+          "find": true,
+          "findById": true
+        }
+      }
+    }
+  },
+  "Sponsors": {
+    "dataSource": "clinicaldb",
+    "public": true,
+    "options": {
+      "remoting": {
+        "sharedMethods": {
+          "*": false,
+          "find": true,
+          "findById": true
+        }
+      }
+    }
+  },
+  "Conditions": {
+    "dataSource": "clinicaldb",
+    "public": true,
+    "options": {
+      "remoting": {
+        "sharedMethods": {
+          "*": false,
+          "find": true,
+          "findById": true
+        }
+      }
+    }
+  },
+  "Links": {
+    "dataSource": "clinicaldb",
+    "public": true,
+    "options": {
+      "remoting": {
+        "sharedMethods": {
+          "*": false,
+          "find": true,
+          "findById": true
+        }
+      }
+    }
+  },
+  "Keywords": {
+    "dataSource": "clinicaldb",
+    "public": true,
+    "options": {
+      "remoting": {
+        "sharedMethods": {
+          "*": false,
+          "find": true,
+          "findById": true
+        }
+      }
+    }
+  },
+  "Countries": {
+    "dataSource": "clinicaldb",
+    "public": true,
+    "options": {
+      "remoting": {
+        "sharedMethods": {
+          "*": false,
+          "find": true,
+          "findById": true
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "db": {
+    "name": "db",
+    "connector": "memory"
+  },
+  "clinicaldb": {
+    "host": "aact-prod.cr4nrslb1lw7.us-east-1.rds.amazonaws.com",
+    "port": 5432,
+    "url": "postgres://aact:aact@aact-prod.cr4nrslb1lw7.us-east-1.rds.amazonaws.com:5432/aact",
+    "database": "aact",
+    "password": "aact",
+    "name": "clinicaldb",
+    "user": "aact",
+    "connector": "postgresql"
+  }
+}
